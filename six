@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Задание 6</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+	<script type="text/javascript" src="ggjs.js"></script>
+	<style type="text/css">
+		canvas { border: 1px solid black; }
+		body, html{
+			margin: 0
+		}
+	</style>
+</head>
+<body onload="Сreation();">
+	<canvas id="canvas" width="1000" height="500" onclick="nput(event);">
+	</canvas>
+	<form>
+		<input type = "button"  value = "Вверх" onclick="move(0)">
+		<input type = "button"  value = "Влево" onclick="move(2)">
+		<input type = "button"  value = "Вниз" onclick="move(1)">
+		<input type = "button"  value = "Вправо" onclick="move(3)">
+		<input type = "button"  value = "Рандом" onclick="move(4)">
+		<input type = "button"  value = "Хаос" onclick="move(5)">
+		<input type = "button"  value = "Стоп" onclick="if (idTimer) {clearInterval(idTimer); idTimer = null}">
+	</form>
+</body>
+</html>
